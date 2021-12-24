@@ -1,22 +1,36 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from "./pages/Home/Home";
-import About from "./pages/About";
-import Navigation from './component/nev/Navigation';
-import Venues from './pages/Categories/Venues';
+import React from 'react'
+import Features from './pages/Features'
+import Header from './pages/Header'
+import Slider from './pages/Slider'
+import Weddinglist from './pages/Weddinglist'
+import Weddingvender from './pages/Weddingvender'
+import Location from './pages/Location'
+import Realwedding from './Realwedding'
+import Vendorservices from './pages/Vendorservices'
+import Feedbackcustomer from './pages/Feedbackcustomer'
+import Exportteam from './pages/Exportteam'
+import Newsupdate from './pages/Newsupdate'
+import Ideastips from './pages/Ideastips'
+import Footer from './pages/Footer'
 
-const  App  = () => {
-    return (
+export default function App() {
+  return (
     <>
-        <Router>
-              <Navigation />
-            <Switch>
-                <Route path="/" component={Home} exact></Route>
-                <Route path="/venues" component={Venues}></Route>
-                <Route path="/about" component={About}></Route>
-            </Switch>
-        </Router>
-    </>
-    )
-}
+      <Header/>
+      <Slider/>
+      <Features/>
+      <Weddinglist/>
+      <Weddingvender/>
+      <Location/>
+      <Realwedding/>
+      <Vendorservices/>
+      <Feedbackcustomer/>
+      <Exportteam/>
+      <Newsupdate/>
+      <Ideastips/>
+      <Footer/>
+    
 
-export default App;
+    </>
+  )
+}
