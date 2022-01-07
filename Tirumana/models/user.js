@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema(
     username: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     email: {
       type: String,
@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema(
       unique: true,
     },
     hash_password: {
-      type: String
+      type: String,
     },
     gender: {
       type: String,
@@ -28,17 +28,16 @@ const UserSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    role: { type: String, role: ['user', 'admin'], default: 'user' },
+    role: { type: String, role: ["user", "admin"], default: "user" },
     contactNumber: { type: String },
-    profilePitcher: { type: String }
-  },{ timestamps: true });
+    profilePitcher: { type: String },
+  },
+  { timestamps: true }
+);
 
-
-UserSchema.virtual('password')
-  .set(function (password) {
-    this.hash_password = bcrypt.hashSync('password', 10)
-  })
-
+UserSchema.virtual("password").set(function (password) {
+  this.hash_password = bcrypt.hashSync("password", 10);
+});
 
 // UserSchema.methods = {
 //   authenticate: function(password){
@@ -48,13 +47,9 @@ UserSchema.virtual('password')
 
 UserSchema.methods = {
   authenticate: function (password) {
-    return bcrypt.compare(password, this.hash_password)
-  }
-}
-
-
-
-
+    return bcrypt.compare(password, this.hash_password);
+  },
+};
 
 // UserSchema.methods = {
 //   checkPassword: function (inputPassword) {
