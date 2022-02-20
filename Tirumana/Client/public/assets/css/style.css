@@ -1753,11 +1753,11 @@ header .btn {
 }
 .navbar-expand-md .navbar-nav .nav-item,
 .navbar-expand-lg .navbar-nav .nav-item {
-  padding: 0 0.19rem 0;
+  /* padding: 0 0rem 0; */
 }
 .navbar-expand-md .navbar-nav .nav-link,
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 1.8rem 0.4rem;
+  /* padding: 1.8rem 0.4rem; */
   border-radius: 3px;
   font-weight: 700;
   transition: all 0.3s;
