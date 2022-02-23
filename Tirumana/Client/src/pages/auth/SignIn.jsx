@@ -4,19 +4,16 @@ import { Link } from "react-router-dom";
 function SignIn() {
   return (
     <>
-    
-      <div className="bg-soft">
-        <section className="vh-lg-100 d-flex align-items-center">
-          <div className="container">
-            <div
-              className="row justify-content-center form-bg-image"
-              data-background-lg="/theme_files/assets/img/illustrations/signin.svg"
-            >
-              <div className="col-12 d-flex align-items-center justify-content-center">
-                <div className="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
-                  <div className="text-center text-md-center mb-4 mt-md-0">
+
+      <div className="vh-100"  style={{backgroundImage:"url(img/ring.jpg)", backgroundRepeat:"no-repeat", backgroundSize: "cover"}}>
+          <div className="container "> 
+           <div className="text-center text-md-center mb-4 mt-md-0">
                     <h1 className="mb-0 h3">Sign in to our platform</h1>
                   </div>
+          <div className="row">
+          <div className="col-lg-4  d-flex align-items-center justify-content-center">
+                <div className="signin-inner my-3 my-lg-0  p-4 p-lg-5 w-100 fmxw-500">
+                 
                   <form className="mt-4">
                     <div className="form-group mb-4">
                       <label for="email">Your Email</label>
@@ -128,10 +125,12 @@ function SignIn() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
-        </section>
+          <div className="col-lg-8">
+
+          </div>
+          </div>
+          </div>
       </div>
     </>
   );
