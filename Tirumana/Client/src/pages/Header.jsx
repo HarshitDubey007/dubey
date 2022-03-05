@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Header() {
   return (
     <>
-        <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <nav class="navbar navbar-expand-lg fixed-sticky  scrolling-navbar indigo">
           <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
               <a class="navbar-brand" href="/">
