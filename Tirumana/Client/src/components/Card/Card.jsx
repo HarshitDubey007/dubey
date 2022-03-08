@@ -1,35 +1,55 @@
 import React from "react";
+import { Link } from "react-router-dom"
+
 import "./style.css";
 export default function Card() {
   return (
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-center">
-              {/* <strong>STYLE 1</strong> */}
-            </h4>
-            {/* <hr /> */}
-            <div class="profile-card-2">
-              <img
-                src="img/Indian_Wedding_Hands_2019_0.jpg"
-                class="img img-responsive"
-              />
-              <div class="profile-name">Taj mahal</div>
-              <div class="profile-username">Agra</div>
-              <div class="profile-icons">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              <button class="btn btn-outline-dark">Add To Cart</button>
-              </div>
+    <div className="col-lg-3 col-md-3">
+      <div className="wedding-listing">
+        <div className="img">
+          <Link to="listing-singular.html">
+            <img src="assets/images/weddings/wedding_listing_1.jpg" alt="" />
+          </Link>
+          <div className="img-content">
+            <div className="top">
+              <span className="price">
+                <i className="fa fa-tag"></i>
+                <span>$500-$800</span>
+              </span>
             </div>
+            <div className="bottom">
+              <Link className="tags" to="javascript:">
+                Fashion
+              </Link>
+              <Link className="favorite" to="javascript:">
+                <i className="fa fa-heart-o"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="content">
+          <div className="gap">
+            <h3>
+              <Link to="listing-singular.html">
+                Happy Wedding Fashions{" "}
+                <span className="verified">
+                  <i className="fa fa-check-circle"></i>
+                </span>
+              </Link>
+            </h3>
+            <div>
+              <i className="fa fa-map-marker"></i> Surat, Gujrat, India
+            </div>
+          </div>
+          <div className="reviews">
+            <span className="stars">
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star-half-o"></i>
+              <i className="fa fa-star-o"></i>
+            </span>
+            (6 review)
           </div>
         </div>
       </div>

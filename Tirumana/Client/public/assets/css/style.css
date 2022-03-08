@@ -1936,7 +1936,7 @@ header .btn {
 /*---- 6.1 Main Home Slider Slider ---*/
 .slider-wrap {
   position: relative;
-  margin-top: 129px;
+  /* margin-top: 100px; */
   min-height: 500px;
   background: #f8f8f8;
 }

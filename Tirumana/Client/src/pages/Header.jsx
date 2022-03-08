@@ -50,6 +50,16 @@ export default function Header() {
                       Home
                     </Link>
                  </li>
+                 <li class="nav-item">
+                    <Link class="nav-link dropdown-item" to="/vendors">
+                    Vendors
+                    </Link>
+                 </li>
+                 <li class="nav-item">
+                    <Link class="nav-link dropdown-item" to="/signup">
+                    signup
+                    </Link>
+                 </li>
                 {/* <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle-mob"
